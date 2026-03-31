@@ -56,7 +56,7 @@ export function Header() {
             : "bg-transparent border-transparent pt-24 pb-5 sm:py-5"
         )}
       >
-        <div className="max-w-7xl mx-auto px-8 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between">
           <Link href="/">
             <Image
               src={isScrolled ? "/logo.svg" : "/logowhite.svg"}
@@ -64,7 +64,7 @@ export function Header() {
               width={isScrolled ? 150 : 180}
               height={40}
               className={cn(
-                "transition-all duration-300 h-8 w-auto sm:h-10",
+                "transition-all duration-300 h-10 w-auto sm:h-12",
                 !isScrolled && "sm:mt-4",
               )}
             />
