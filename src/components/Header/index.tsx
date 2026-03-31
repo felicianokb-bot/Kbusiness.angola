@@ -64,7 +64,7 @@ export function Header() {
               width={isScrolled ? 150 : 180}
               height={40}
               className={cn(
-                "transition-all duration-300",
+                "transition-all duration-300 h-8 w-auto sm:h-10",
                 !isScrolled && "sm:mt-4",
               )}
             />
