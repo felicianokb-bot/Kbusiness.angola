@@ -4,7 +4,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { DrawerMenu } from "./Drawer"
-import { TopBar } from "../TopBar"
 import { cn } from '@/lib/utils'
 
 export function Header() {
@@ -49,7 +48,6 @@ export function Header() {
 
   return (
     <div className="flex flex-col bg-cover relative">
-      <TopBar />
       <header
         className={cn(
           "w-full z-50 fixed top-0 left-0 right-0 transition-all duration-300 border-b",
