@@ -5,7 +5,7 @@ export function Service() {
  
 
   return (
-    <section id="areas" className="py-16 md:py-24 lg:py-28 xl:py-32 bg-gray-200 bg-[url(/assets/about.jpg)] bg-cover scroll-mt-24 animate-in fade-in slide-in-from-bottom-10 duration-500">
+    <section id="areas" className="py-16 md:py-24 lg:py-28 xl:py-32 bg-gray-200 scroll-mt-24 animate-in fade-in slide-in-from-bottom-10 duration-500">
       <div className="max-w-7xl px-8 w-full flex flex-col items-center mx-auto">
         <SectionHeader
           label="Áreas de atuação"
