@@ -53,7 +53,7 @@ export function Header() {
           "w-full z-50 fixed top-0 left-0 right-0 transition-all duration-300 border-b",
           isScrolled
             ? "bg-white shadow-md border-gray-200 py-3"
-            : "bg-transparent border-transparent pt-24 pb-5 sm:py-5"
+            : "bg-transparent border-transparent pt-16 pb-3 sm:pt-24 sm:pb-5"
         )}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between">
@@ -64,7 +64,7 @@ export function Header() {
               width={isScrolled ? 150 : 180}
               height={40}
               className={cn(
-                "transition-all duration-300 h-10 w-auto sm:h-12",
+                "transition-all duration-300 h-14 w-auto sm:h-12",
                 !isScrolled && "sm:mt-4",
               )}
             />
@@ -97,7 +97,7 @@ export function Header() {
                   </button>
               </Link>
             </div>
-            <div className="block z-10 md:hidden">
+            <div className="block z-10 md:hidden -mt-2">
                 <DrawerMenu />
             </div>
           </div>
