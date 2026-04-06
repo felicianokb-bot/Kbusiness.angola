@@ -61,10 +61,10 @@ export function Header() {
             <Image
               src={isScrolled ? "/logo.svg" : "/logowhite.svg"}
               alt="KBusiness logo"
-              width={isScrolled ? 150 : 180}
-              height={40}
+              width={isScrolled ? 180 : 220}
+              height={50}
               className={cn(
-                "transition-all duration-300 h-14 w-auto sm:h-12",
+                "transition-all duration-300 h-14 w-auto sm:h-16",
                 !isScrolled && "sm:mt-4",
               )}
             />
