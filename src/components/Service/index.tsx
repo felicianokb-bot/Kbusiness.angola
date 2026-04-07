@@ -97,8 +97,8 @@ export function Service() {
           </div>
 
           <div id="aprovisionamento-procurement" className="flex flex-col md:flex-row items-center gap-8 space-y-4 overflow-hidden">
-            <div className="relative w-full md:w-1/2 bg-primary rounded-md overflow-hidden text-3xl mb-2 aspect-[16/9]">
-              <Image src="/assets/procurement.png" alt="Aprovisionamento & Procurement" className="object-cover" fill sizes="(min-width:1024px) 50vw, 100vw" />
+            <div className="relative w-full bg-primary rounded-md overflow-hidden text-3xl mb-2 aspect-[16/9]">
+              <Image src="/assets/procurement.png" alt="Aprovisionamento & Procurement" className="object-cover object-center" fill sizes="(min-width:1024px) 100vw, 100vw" />
             </div>
             <div className="p-4">
               <h3 className="text-2xl uppercase mb-4 font-bold">
