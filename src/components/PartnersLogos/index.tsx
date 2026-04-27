@@ -1,8 +1,6 @@
  "use client"
 
 import Image from "next/image"
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel"
-import Autoplay from "embla-carousel-autoplay"
 import { partnersImages } from "@/data/partners"
 
 export function PartnersLogos() {
@@ -10,26 +8,15 @@ export function PartnersLogos() {
     return null
   }
   return (
-    <section className="py-8 bg-white animate-in fade-in slide-in-from-bottom-10 duration-500">
-      <div className="max-w-7xl mx-auto px-8">
-        <Carousel
-          plugins={[
-            Autoplay({
-              delay: 2500
-            })
-          ]}
-          opts={{ loop: true }}
-        >
-          <CarouselContent className="items-center">
-            {partnersImages.map((src) => (
-              <CarouselItem key={src} className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 p-5">
-                <div className="w-full h-28 sm:h-32 flex items-center justify-center">
-                  <Image src={src} alt="Parceiro" width={220} height={120} className="w-auto h-full object-contain" />
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-        </Carousel>
+    <section className="py-8 bg-white animate-in fade-in slide-in-from-bottom-10 duration-500 w-full">
+      <div className="w-full px-4 sm:px-8 lg:px-12">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-center">
+          {partnersImages.map((src) => (
+            <div key={src} className="w-full h-40 sm:h-48 lg:h-56 flex items-center justify-center rounded-xl bg-gray-50">
+              <Image src={src} alt="Parceiro" width={360} height={180} className="w-auto h-full object-contain p-4" />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )
